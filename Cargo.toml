@@ -1,0 +1,36 @@
+[package]
+name = "DarkhillSynthesizer"
+version = "0.1.0"
+authors = ["Kaare Hansen <kaare@gshansen.dk>"]
+edition = "2018"
+description = "En Synthesizer fra Mørkhøj"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+#bindgen = { git = "https://github.com/rust-lang/rust-bindgen", tag = "v0.28.1" }
+portmidi = "^0.2"
+#azul = { git = "https://github.com/maps4print/azul", rev="dc3dfa83a16af7895f9cdbdbbf7b65d9a0406fc2" }
+#iui = { git = "https://github.com/rust-native-ui/libui-rs.git" }
+#druid = { git = "https://github.com/xi-editor/druid.git", version = "0.5" }
+#orbtk = { git = "https://github.com/redox-os/orbtk.git", branch = "develop" }
+
+docopt = "0.6.*"
+rustc-serialize = "0.3.*"
+cpal = "0.11.*"
+anyhow = "1.0.12"
+#rci = "~0.1"
+
+[package.metadata.bundle]
+name = "SRPSynthesizer"
+identifier = "dk.gshansen.srpsynthesizer"
+#icon = ["32x32.png", "128x128.png", "128x128@2x.png"]
+version = "1.0.0"
+#resources = ["assets", "images/**/*.png", "secrets/public_key.txt"]
+copyright = "Copyright (c) Kaare G. S. Hansen 2020. All rights reserved."
+#category = "Audio"
+short_description = "En simpel synthesizer"
+long_description = """
+En simpel synthesizer med MIDI-input til brug i SRP project.
+"""
+#osx_frameworks = ["SDL2"]
